@@ -110,23 +110,26 @@
         flex-wrap: wrap;
       }
 
-      .skills-section:not(:first-child) {
-        margin-top: 10px;
-        border-top: 1px solid black;
-      }
-
       ul.skills-section li {
         list-style-type: none;
       }
 
       .skills-section > * {
-        flex: 33%;
+        flex: 50%;
         margin-bottom: 20px;
       }
 
       .skill {
         font-size: 125%;
         margin-right: 15px;
+      }
+
+      .main-skill {
+        font-weight: bold;
+      }
+
+      #backend-skills ul:not(:first-child){
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -226,10 +229,11 @@
             <li><span class="skill">Tailwind</span><span class="skill-level-1">Basic</span></li>
           </ul>
           </section>
-          <section>
+          <section id="backend-skills">
             <h4>Backend</h4>
+            <div>
             <ul class="skills-section">
-              <li><span class="skill">Python</span><span class="skill-level-4">Master</span></li>
+              <li><span class="skill main-skill">Python</span><span class="skill-level-4">Master</span></li>
               <li><span class="skill">Django</span><span class="skill-level-1">Basic</span></li>
               <li><span class="skill">Flask</span><span class="skill-level-2">Intermediate</span></li>
               <li><span class="skill">FastAPI</span><span class="skill-level-2">Intermediate</span></li>
@@ -237,15 +241,26 @@
               <li><span class="skill">Requests</span><span class="skill-level-3">Advanced</span></li>
               <li><span class="skill">SQLAlchemy</span><span class="skill-level-2">Intermediate</span></li>
             </ul>
+            <hr />
             <ul class="skills-section">
-              <li><span class="skill">Node.js</span><span class="skill-level-3">Advanced</span></li>
+              <li><span class="skill main-skill">Node.js</span><span class="skill-level-3">Advanced</span></li>
               <li><span class="skill">Express</span><span class="skill-level-1">Basic</span></li>
               <li><span class="skill">Sequelize</span><span class="skill-level-2">Intermediate</span></li>
             </ul>
-          <ul id="backend-skills" class="skills-section">
-            <li><span class="skill">Java</span><span class="skill-level-1">Intermediate</span></li>
+            <hr />
+          <ul class="skills-section">
+            <li><span class="skill">Java</span><span class="skill-level-2">Intermediate</span></li>
             <li><span class="skill">C++</span><span class="skill-level-2">Intermediate</span></li>
             <li><span class="skill">Bash</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Ruby</span><span class="skill-level-1">Basic</span></li>
+            <li><span class="skill">SQLite</span><span class="skill-level-3">Advanced</span></li>
+            <li><span class="skill">Postgresql</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">MySQL/MariaDB</span><span class="skill-level-1">Basic</span></li>
+            <li><span class="skill">Nginx</span><span class="skill-level-3">Advanced</span></li>
+            <li><span class="skill">Apache</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Azure</span><span class="skill-level-1">Basic</span></li>
+            </ul>
+          </div>
         </section>
       </div>
     </section>
