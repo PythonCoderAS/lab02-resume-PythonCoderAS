@@ -1,104 +1,253 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>XHTML Template Example - Intro ITWS</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    
-    
-       
+    <title>Aoyan Sarkar - Resume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <style type="text/css">
-       html {
-          width: 100%;
-       }
+      html {
+        max-width: 80%;
+        margin: auto
+      }
 
       body {
-         width: 95%;
-        font-family: Arial, Helvetica, sans-serif; 
-        overflow: hidden;
+        width: 95%;
+        font-family: 'Rubik', Helvetica, Arial, sans-serif;
       }
+
       h1 {
-        text-align: center; 
+        text-align: center;
         margin: 0;
         padding: 0;
         font-variant: small-caps;
-
+        font-size: 3em;
       }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Righteous', cursive, sans-serif;
+      }
+
       h2 {
-        float: left;
-        clear: left;
-        width: 150px;
-        margin: 20px 0 0 0;
-        padding: 0;
-        font-size: 1.2em;
-      }
-      .leader {
-         color:blue;
+        text-transform: uppercase;
       }
 
+      #skills h3, #skills h4 {
+        font-size: larger;
+      }
 
       #contactInfo {
-        border-top: 2px solid #333;
-        border-bottom: 2px solid #333;
-        padding: 4px 0  4px 0;
-        margin: 0;
-        text-align: center;
-        white-space: nowrap;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1.5px solid black;
+        border-bottom: 1.5px solid black;
       }
-      #contactInfo li {
-        display: inline;
-        list-style: none;
-        margin: 0 0.25em 0 0.25em;
-      }
-#nameWrapper {
-   width: 100%;
-   float: left;
-   clear: both;
-}
-      #nm {
-         width: 30%;
-      }
-      #ci {
-         width:70%;
-         float:right;
 
+      .space-between {
+        display: flex;
+        justify-content: space-between;
       }
-      
-      
+
+      .job-location-title,
+      .school-location-title {
+        font-weight: bold;
+      }
+
+      #jobs h2,
+      #jobs h3,
+      #education h2,
+      #education h3 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .skill-level-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: red;
+        color: white;
+      }
+
+      .skill-level-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: orange;
+        color: black;
+      }
+
+      .skill-level-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: green;
+        color: white;
+      }
+
+      .skill-level-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #2a52be;
+        color: white;
+      }
+
+      .skills-section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .skills-section:not(:first-child) {
+        margin-top: 10px;
+        border-top: 1px solid black;
+      }
+
+      ul.skills-section li {
+        list-style-type: none;
+      }
+
+      .skills-section > * {
+        flex: 33%;
+        margin-bottom: 20px;
+      }
+
+      .skill {
+        font-size: 125%;
+        margin-right: 15px;
+      }
     </style>
   </head>
-
   <body>
-    <h1><a href="http://rpi.edu">Pamela Evans</a></h1>
-      <ul id="contactInfo">
-        <li>145 Tahquitz Canyon</li>
-        <li>Palm Springs, California 92262</li>
-        <li>760-555-1212</li>
-        <li>support@resumeedge.com</li>
-      </ul>
-    <h2>PROFILE</h2>
-      <ul id="jobs">
-        <li>TA, RPI</li>  
-        <li>Another job</li>
-      </ul>
-
-<div>   
-   <h2>EDUCATION</h2>
-   <ul><li></li></ul>
-</div>
-
-<div id="nameWrapper">      
-   <div id="nm">
-      <p>Fname</p>
-      <p>Lname</p>
-   </div>
-   <div id="ci">
-      contact info
-   </div>
-</div>
-
-      
+    <header>
+      <h1>Aoyan Sarkar</h1>
+      <div id="contactInfo" class="space-between">
+        <address>30-45 86th Street, East Elmhurst, New York, 11369</address>
+        <span>347-944-7314</span>
+        <span>sarkaraoyan@gmail.com</span>
+      </div>
+    </header>
+    <section>
+      <h2>Work Experience</h2>
+      <div id="jobs">
+        <section class="job">
+          <div class="job-header space-between">
+            <h3>Remote Buddies</h3>
+            <h3>July 2020-August 2020 </span>
+          </div>
+          <div class="job-location-title space-between">
+            <span></span>
+            <span>Role: Tutor</span>
+          </div>
+          <p>Taught essay-writing skills and explained concepts in mathematics to middle-school children.</p>
+        </section>
+        <section class="job">
+          <div class="job-header space-between">
+            <h3>Summer Youth Experience Program</h3>
+            <h3>July 2021-August 2021 </span>
+          </div>
+          <div class="job-location-title space-between">
+            <span>LaGuardia Community College, Queens, New York</span>
+            <span>Role: Administration</span>
+          </div>
+          <p>Assisted the existing administration at LaGuardia Community College with day-to-day tasks.</p>
+        </section>
+        <section class="job">
+          <div class="job-header space-between">
+            <h3>Rensselaer Dining Sodexo</h3>
+            <h3>January 2023-Present </span>
+          </div>
+          <div class="job-location-title space-between">
+            <span>Rensselaer Polytechnic Institute, Troy, NY</span>
+            <span>Role: Student Worker</span>
+          </div>
+          <p>Assisted the dining staff by cleaning dishes, refilling utensil containers, cleaning tables and other housekeeping work.</p>
+        </section>
+      </div>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <div id="education">
+        <section class="school">
+          <div class="school-header space-between">
+            <h3>Bronx High School of Science</h3>
+            <h3>September 2018-June 2022 </span>
+          </div>
+          <div class="school-location-title space-between">
+            <span>Bronx, NY</span>
+            <span>High School</span>
+          </div>
+          <p>Recieved a well-rounded education with advanced classes in math, natural sciences and the social sciences.</p>
+        </section>
+        <section class="school">
+          <div class="school-header space-between">
+            <h3>Rensselaer Polytechnic Institute</h3>
+            <h3>August 2022-Present </span>
+          </div>
+          <div class="school-location-title space-between">
+            <span>Troy, NY</span>
+            <span>Majors: Computer Science <br />Information Technology and Web Science </span>
+          </div>
+          <ul>
+            <li>Enrolled in the Dual Major Program</li>
+            <li>GPA of 4.0</li>
+            <li>Listed on the <a href="https://info.rpi.edu/sites/default/files/Fall%202022%20Dean%27s%20Honor%20List.pdf">Fall 2022 Dean's Honor List</a>. </li>
+          </ul>
+        </section>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <div id="skills">
+        <section>
+          <h3>Programming Languages</h3>
+          <section>
+            <h4>Frontend</h4>
+          <ul id="frontend-skills" class="skills-section">
+            <li><span class="skill">HTML</span><span class="skill-level-3">Advanced</span></li>
+            <li><span class="skill">CSS</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Vanilla JS</span><span class="skill-level-3">Advanced</span></li>
+            <li><span class="skill">Typescript</span><span class="skill-level-3">Advanced</span></li>
+            <li><span class="skill">React</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Vite</span><span class="skill-level-1">Basic</span></li>
+            <li><span class="skill">Bootstrap</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Material UI</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Tailwind</span><span class="skill-level-1">Basic</span></li>
+          </ul>
+          </section>
+          <section>
+            <h4>Backend</h4>
+            <ul class="skills-section">
+              <li><span class="skill">Python</span><span class="skill-level-4">Master</span></li>
+              <li><span class="skill">Django</span><span class="skill-level-1">Basic</span></li>
+              <li><span class="skill">Flask</span><span class="skill-level-2">Intermediate</span></li>
+              <li><span class="skill">FastAPI</span><span class="skill-level-2">Intermediate</span></li>
+              <li><span class="skill">Asyncio/Aiohttp</span><span class="skill-level-2">Intermediate</span></li>
+              <li><span class="skill">Requests</span><span class="skill-level-3">Advanced</span></li>
+              <li><span class="skill">SQLAlchemy</span><span class="skill-level-2">Intermediate</span></li>
+            </ul>
+            <ul class="skills-section">
+              <li><span class="skill">Node.js</span><span class="skill-level-3">Advanced</span></li>
+              <li><span class="skill">Express</span><span class="skill-level-1">Basic</span></li>
+              <li><span class="skill">Sequelize</span><span class="skill-level-2">Intermediate</span></li>
+            </ul>
+          <ul id="backend-skills" class="skills-section">
+            <li><span class="skill">Java</span><span class="skill-level-1">Intermediate</span></li>
+            <li><span class="skill">C++</span><span class="skill-level-2">Intermediate</span></li>
+            <li><span class="skill">Bash</span><span class="skill-level-2">Intermediate</span></li>
+        </section>
+      </div>
+    </section>
   </body>
-  
 </html>
-
-
