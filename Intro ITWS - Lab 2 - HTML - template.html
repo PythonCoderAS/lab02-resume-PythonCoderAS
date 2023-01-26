@@ -69,38 +69,34 @@
         padding: 0;
       }
 
-      .skill-level-1 {
+      .skill-level-1,
+      .skill-level-2,
+      .skill-level-3,
+      .skill-level-4 {
+        display: inline-block;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
+        font-size: 75%;
+      }
+
+      .skill-level-1 {
         background-color: red;
         color: white;
       }
 
       .skill-level-2 {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         background-color: orange;
         color: black;
       }
 
       .skill-level-3 {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         background-color: green;
         color: white;
       }
 
       .skill-level-4 {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         background-color: #2a52be;
         color: white;
       }
@@ -116,11 +112,11 @@
 
       .skills-section > * {
         flex: 50%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       .skill {
-        font-size: 125%;
+        font-size: 100%;
         margin-right: 15px;
       }
 
@@ -131,6 +127,13 @@
       #backend-skills ul:not(:first-child){
         margin-top: 20px;
       }
+
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+    color-adjust: exact !important;                 /* Firefox 48 – 96 */
+    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+}
+
     </style>
   </head>
   <body>
