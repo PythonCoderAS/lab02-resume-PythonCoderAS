@@ -131,8 +131,7 @@
         margin-top: 20px;
       }
 
-      @media screen and (min-width: 1200px) {
-
+      @media screen {
         .skill-level-1,
         .skill-level-2,
         .skill-level-3,
@@ -146,8 +145,19 @@
         }
 
         .skills-section>* {
-          flex: 25%;
           margin-bottom: 20px;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .skills-section>* {
+          flex: 33%;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .skills-section>* {
+          flex: 25%;
         }
       }
 
