@@ -38,7 +38,8 @@
         text-transform: uppercase;
       }
 
-      #skills h3, #skills h4 {
+      #skills h3,
+      #skills h4 {
         font-size: larger;
       }
 
@@ -110,9 +111,11 @@
         list-style-type: none;
       }
 
-      .skills-section > * {
+      .skills-section>* {
         flex: 50%;
         margin-bottom: 10px;
+        align-self: left;
+        justify-content: left;
       }
 
       .skill {
@@ -124,16 +127,38 @@
         font-weight: bold;
       }
 
-      #backend-skills ul:not(:first-child){
+      #backend-skills ul:not(:first-child) {
         margin-top: 20px;
       }
 
-* {
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
-    color-adjust: exact !important;                 /* Firefox 48 – 96 */
-    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
-}
+      @media screen and (min-width: 1200px) {
 
+        .skill-level-1,
+        .skill-level-2,
+        .skill-level-3,
+        .skill-level-4 {
+          font-size: 100%;
+        }
+
+        .skill {
+          font-size: 125%;
+          margin-right: 15px;
+        }
+
+        .skills-section>* {
+          flex: 25%;
+          margin-bottom: 20px;
+        }
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        /* Chrome, Safari 6 – 15.3, Edge */
+        color-adjust: exact !important;
+        /* Firefox 48 – 96 */
+        print-color-adjust: exact !important;
+        /* Firefox 97+, Safari 15.4+ */
+      }
     </style>
   </head>
   <body>
@@ -189,7 +214,7 @@
         <section class="school">
           <div class="school-header space-between">
             <h3>Bronx High School of Science</h3>
-            <h3>September 2018-June 2022 </span>
+            <h3>September 2018-June 2022</span>
           </div>
           <div class="school-location-title space-between">
             <span>Bronx, NY</span>
@@ -200,16 +225,16 @@
         <section class="school">
           <div class="school-header space-between">
             <h3>Rensselaer Polytechnic Institute</h3>
-            <h3>August 2022-Present </span>
+            <h3>August 2022-Present</span>
           </div>
           <div class="school-location-title space-between">
             <span>Troy, NY</span>
-            <span>Majors: Computer Science <br />Information Technology and Web Science </span>
+            <span>Majors: Computer Science<br />Information Technology and Web Science</span>
           </div>
           <ul>
             <li>Enrolled in the Dual Major Program</li>
             <li>GPA of 4.0</li>
-            <li>Listed on the <a href="https://info.rpi.edu/sites/default/files/Fall%202022%20Dean%27s%20Honor%20List.pdf">Fall 2022 Dean's Honor List</a>. </li>
+            <li>Listed on the <a href="https://info.rpi.edu/sites/default/files/Fall%202022%20Dean%27s%20Honor%20List.pdf">Fall 2022 Dean's Honor List</a>.</li>
           </ul>
         </section>
     </section>
@@ -220,51 +245,138 @@
           <h3>Programming Languages</h3>
           <section>
             <h4>Frontend</h4>
-          <ul id="frontend-skills" class="skills-section">
-            <li><span class="skill">HTML</span><span class="skill-level-3">Advanced</span></li>
-            <li><span class="skill">CSS</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Vanilla JS</span><span class="skill-level-3">Advanced</span></li>
-            <li><span class="skill">Typescript</span><span class="skill-level-3">Advanced</span></li>
-            <li><span class="skill">React</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Vite</span><span class="skill-level-1">Basic</span></li>
-            <li><span class="skill">Bootstrap</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Material UI</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Tailwind</span><span class="skill-level-1">Basic</span></li>
-          </ul>
+            <ul id="frontend-skills" class="skills-section">
+              <li>
+                <span class="skill">HTML</span>
+                <span class="skill-level-3">Advanced</span>
+              </li>
+              <li>
+                <span class="skill">CSS</span>
+                <span class="skill-level-2">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill">Vanilla JS</span>
+                <span class="skill-level-3">Advanced</span>
+              </li>
+              <li>
+                <span class="skill">Typescript</span>
+                <span class="skill-level-3">Advanced</span>
+              </li>
+              <li>
+                <span class="skill">React</span>
+                <span class="skill-level-2">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill">Vite</span>
+                <span class="skill-level-1">Basic</span>
+              </li>
+              <li>
+                <span class="skill">Bootstrap</span>
+                <span class="skill-level-2">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill">Material UI</span>
+                <span class="skill-level-2">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill">Tailwind</span>
+                <span class="skill-level-1">Basic</span>
+              </li>
+            </ul>
           </section>
           <section id="backend-skills">
             <h4>Backend</h4>
             <div>
-            <ul class="skills-section">
-              <li><span class="skill main-skill">Python</span><span class="skill-level-4">Master</span></li>
-              <li><span class="skill">Django</span><span class="skill-level-1">Basic</span></li>
-              <li><span class="skill">Flask</span><span class="skill-level-2">Intermediate</span></li>
-              <li><span class="skill">FastAPI</span><span class="skill-level-2">Intermediate</span></li>
-              <li><span class="skill">Asyncio/Aiohttp</span><span class="skill-level-2">Intermediate</span></li>
-              <li><span class="skill">Requests</span><span class="skill-level-3">Advanced</span></li>
-              <li><span class="skill">SQLAlchemy</span><span class="skill-level-2">Intermediate</span></li>
-            </ul>
-            <hr />
-            <ul class="skills-section">
-              <li><span class="skill main-skill">Node.js</span><span class="skill-level-3">Advanced</span></li>
-              <li><span class="skill">Express</span><span class="skill-level-1">Basic</span></li>
-              <li><span class="skill">Sequelize</span><span class="skill-level-2">Intermediate</span></li>
-            </ul>
-            <hr />
-          <ul class="skills-section">
-            <li><span class="skill">Java</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">C++</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Bash</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Ruby</span><span class="skill-level-1">Basic</span></li>
-            <li><span class="skill">SQLite</span><span class="skill-level-3">Advanced</span></li>
-            <li><span class="skill">Postgresql</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">MySQL/MariaDB</span><span class="skill-level-1">Basic</span></li>
-            <li><span class="skill">Nginx</span><span class="skill-level-3">Advanced</span></li>
-            <li><span class="skill">Apache</span><span class="skill-level-2">Intermediate</span></li>
-            <li><span class="skill">Azure</span><span class="skill-level-1">Basic</span></li>
-            </ul>
-          </div>
-        </section>
+              <ul class="skills-section">
+                <li>
+                  <span class="skill main-skill">Python</span>
+                  <span class="skill-level-4">Master</span>
+                </li>
+                <li>
+                  <span class="skill">Django</span>
+                  <span class="skill-level-1">Basic</span>
+                </li>
+                <li>
+                  <span class="skill">Flask</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">FastAPI</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">Asyncio/Aiohttp</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">Requests</span>
+                  <span class="skill-level-3">Advanced</span>
+                </li>
+                <li>
+                  <span class="skill">SQLAlchemy</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+              </ul>
+              <hr />
+              <ul class="skills-section">
+                <li>
+                  <span class="skill main-skill">Node.js</span>
+                  <span class="skill-level-3">Advanced</span>
+                </li>
+                <li>
+                  <span class="skill">Express</span>
+                  <span class="skill-level-1">Basic</span>
+                </li>
+                <li>
+                  <span class="skill">Sequelize</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+              </ul>
+              <hr />
+              <ul class="skills-section">
+                <li>
+                  <span class="skill">Java</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">C++</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">Bash</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">Ruby</span>
+                  <span class="skill-level-1">Basic</span>
+                </li>
+                <li>
+                  <span class="skill">SQLite</span>
+                  <span class="skill-level-3">Advanced</span>
+                </li>
+                <li>
+                  <span class="skill">Postgresql</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">MySQL/MariaDB</span>
+                  <span class="skill-level-1">Basic</span>
+                </li>
+                <li>
+                  <span class="skill">Nginx</span>
+                  <span class="skill-level-3">Advanced</span>
+                </li>
+                <li>
+                  <span class="skill">Apache</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+                <li>
+                  <span class="skill">Azure</span>
+                  <span class="skill-level-2">Intermediate</span>
+                </li>
+              </ul>
+            </div>
+          </section>
       </div>
     </section>
   </body>
