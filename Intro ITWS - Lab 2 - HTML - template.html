@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-    <style type="text/css">
+    <style>
       html {
         max-width: 80%;
         margin: auto
@@ -119,7 +119,6 @@
       .skills-section>* {
         flex: 50%;
         margin-bottom: 10px;
-        align-self: left;
         justify-content: left;
       }
 
@@ -135,7 +134,7 @@
       #backend-skills ul:not(:first-child) {
         margin-top: 20px;
       }
-      
+
       a {
         text-decoration: none;
       }
@@ -165,7 +164,6 @@
       }
 
       @media screen and (min-width: 1200px) {
-
         .skills-section>* {
           flex: 25%;
         }
@@ -185,8 +183,8 @@
           text-align: center;
           display: block;
         }
-        
-        #contactInfo > * {
+
+        #contactInfo>* {
           display: block
         }
       }
@@ -197,7 +195,7 @@
           display: block;
         }
 
-        #contactInfo > * {
+        #contactInfo>* {
           display: block
         }
       }
@@ -208,8 +206,10 @@
       <h1>Aoyan Sarkar</h1>
       <div id="contactInfo" class="space-between">
         <address>30-45 86th Street, East Elmhurst, New York, 11369</address>
-        <span id="email-and-tel"\><span>347-944-7314</span>
-        <span>sarkaraoyan@gmail.com</span></span>
+        <span id="email-and-tel">
+          <span>347-944-7314</span>
+          <span>sarkaraoyan@gmail.com</span>
+        </span>
       </div>
     </header>
     <section>
@@ -218,7 +218,7 @@
         <section class="job">
           <div class="job-header space-between">
             <h3>Remote Buddies</h3>
-            <h3>July 2020-August 2020 </span>
+            <h3>July 2020-August 2020</h3>
           </div>
           <div class="job-location-title space-between">
             <span></span>
@@ -229,7 +229,7 @@
         <section class="job">
           <div class="job-header space-between">
             <h3>Summer Youth Experience Program</h3>
-            <h3>July 2021-August 2021 </span>
+            <h3>July 2021-August 2021 </h3>
           </div>
           <div class="job-location-title space-between">
             <span>LaGuardia Community College, Queens, New York</span>
@@ -240,7 +240,7 @@
         <section class="job">
           <div class="job-header space-between">
             <h3>Rensselaer Dining Sodexo</h3>
-            <h3>January 2023-Present </span>
+            <h3>January 2023-Present </h3>
           </div>
           <div class="job-location-title space-between">
             <span>Rensselaer Polytechnic Institute, Troy, NY</span>
@@ -256,7 +256,7 @@
         <section class="school">
           <div class="school-header space-between">
             <h3>Bronx High School of Science</h3>
-            <h3>September 2018-June 2022</span>
+            <h3>September 2018-June 2022</h3>
           </div>
           <div class="school-location-title space-between">
             <span>Bronx, NY</span>
@@ -267,27 +267,37 @@
         <section class="school">
           <div class="school-header space-between">
             <h3>Rensselaer Polytechnic Institute</h3>
-            <h3>August 2022-Present</span>
+            <h3>August 2022-Present</h3>
           </div>
           <div class="school-location-title space-between">
             <span>Troy, NY</span>
-            <span>Majors: Computer Science<br />Information Technology and Web Science</span>
+            <span>Majors: Computer Science <br />Information Technology and Web Science </span>
           </div>
           <ul>
             <li>Enrolled in the Dual Major Program</li>
             <li>GPA of 4.0</li>
-            <li>Listed on the <a href="https://info.rpi.edu/sites/default/files/Fall%202022%20Dean%27s%20Honor%20List.pdf">Fall 2022 Dean's Honor List</a>.</li>
+            <li>Listed on the <a href="https://info.rpi.edu/sites/default/files/Fall%202022%20Dean%27s%20Honor%20List.pdf">Fall 2022 Dean's Honor List</a>. </li>
           </ul>
         </section>
+      </div>
     </section>
     <section>
       <h3>Open Source</h3>
-      <p><strong>GitHub:</strong> <a href="https://github.com/PythonCoderAS">PythonCoderAS</a></p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/PythonCoderAS">PythonCoderAS</a>
+      </p>
       <h4>Notable Open Source Contributions</h4>
       <ul>
-        <li><a href="https://github.com/praw-dev/praw/commits?author=PythonCoderAS">PRAW</a></li>
-        <li><a href="https://github.com/pulls?q=is%3Apr+author%3APythonCoderAS+archived%3Afalse+org%3AHomebrew+">Homebrew</a></li>
-        <li><a href="https://github.com/RCOS-IHP/IHP">RCOS project: IHP</a></li>
+        <li>
+          <a href="https://github.com/praw-dev/praw/commits?author=PythonCoderAS">PRAW</a>
+        </li>
+        <li>
+          <a href="https://github.com/pulls?q=is%3Apr+author%3APythonCoderAS+archived%3Afalse+org%3AHomebrew+">Homebrew</a>
+        </li>
+        <li>
+          <a href="https://github.com/RCOS-IHP/IHP">RCOS project: IHP</a>
+        </li>
       </ul>
     </section>
     <section>
@@ -429,6 +439,7 @@
               </ul>
             </div>
           </section>
+        </section>
       </div>
     </section>
   </body>
