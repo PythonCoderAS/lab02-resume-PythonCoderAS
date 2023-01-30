@@ -52,6 +52,11 @@
         border-bottom: 1.5px solid black;
       }
 
+      #email-and-tel {
+        display: flex;
+        column-gap: 20px;
+      }
+
       .space-between {
         display: flex;
         justify-content: space-between;
@@ -130,17 +135,21 @@
       #backend-skills ul:not(:first-child) {
         margin-top: 20px;
       }
+      
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
 
       @media screen {
-        .skill-level-1,
-        .skill-level-2,
-        .skill-level-3,
-        .skill-level-4 {
-          font-size: 100%;
+        body {
+          font-size: 125%;
         }
 
         .skill {
-          font-size: 125%;
           margin-right: 15px;
         }
 
@@ -156,6 +165,7 @@
       }
 
       @media screen and (min-width: 1200px) {
+
         .skills-section>* {
           flex: 25%;
         }
@@ -169,6 +179,28 @@
         print-color-adjust: exact !important;
         /* Firefox 97+, Safari 15.4+ */
       }
+
+      @media screen and (max-width: 1450px) {
+        #contactInfo {
+          text-align: center;
+          display: block;
+        }
+        
+        #contactInfo > * {
+          display: block
+        }
+      }
+
+      @media print {
+        #contactInfo {
+          text-align: center;
+          display: block;
+        }
+
+        #contactInfo > * {
+          display: block
+        }
+      }
     </style>
   </head>
   <body>
@@ -176,8 +208,8 @@
       <h1>Aoyan Sarkar</h1>
       <div id="contactInfo" class="space-between">
         <address>30-45 86th Street, East Elmhurst, New York, 11369</address>
-        <span>347-944-7314</span>
-        <span>sarkaraoyan@gmail.com</span>
+        <span id="email-and-tel"\><span>347-944-7314</span>
+        <span>sarkaraoyan@gmail.com</span></span>
       </div>
     </header>
     <section>
@@ -247,6 +279,16 @@
             <li>Listed on the <a href="https://info.rpi.edu/sites/default/files/Fall%202022%20Dean%27s%20Honor%20List.pdf">Fall 2022 Dean's Honor List</a>.</li>
           </ul>
         </section>
+    </section>
+    <section>
+      <h3>Open Source</h3>
+      <p><strong>GitHub:</strong> <a href="https://github.com/PythonCoderAS">PythonCoderAS</a></p>
+      <h4>Notable Open Source Contributions</h4>
+      <ul>
+        <li><a href="https://github.com/praw-dev/praw/commits?author=PythonCoderAS">PRAW</a></li>
+        <li><a href="https://github.com/pulls?q=is%3Apr+author%3APythonCoderAS+archived%3Afalse+org%3AHomebrew+">Homebrew</a></li>
+        <li><a href="https://github.com/RCOS-IHP/IHP">RCOS project: IHP</a></li>
+      </ul>
     </section>
     <section>
       <h2>Skills</h2>
